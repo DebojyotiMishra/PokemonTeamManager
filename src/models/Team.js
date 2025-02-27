@@ -17,3 +17,12 @@ const TeamSchema = new mongoose.Schema({
     default: Date.now
   }
 });
+
+TeamSchema.virtual('pokemonCount', {
+    ref: 'Pokemon',
+    localField: '_id',
+    foreignField: 'team',
+    count: true
+  });
+  
+  module.exports = mongoose.model('Team', TeamSchema);
