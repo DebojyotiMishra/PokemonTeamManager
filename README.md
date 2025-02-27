@@ -1,5 +1,3 @@
-# PokemonTeamManager
-
 # Pokémon Team Manager
 
 A Node.js application for managing Pokémon teams with MongoDB.
