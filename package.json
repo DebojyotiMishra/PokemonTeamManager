@@ -45,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node scripts/verify-branch-name.js"
+      "pre-push": "node scripts/verify-branch-name.js"
     }
   }
 }
